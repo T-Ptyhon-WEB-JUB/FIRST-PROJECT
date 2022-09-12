@@ -1,15 +1,12 @@
 from django.urls import path
 from . import views
 
-# name of app best practise 
+# name of app best practise
 app_name = "actors"
 
-# urls pathes 
+# urls pathes
 urlpatterns = [
 
-path('topactors', views.top_actors, name='topactors')
-
+    path('topactors', views.top_actors, name='topactors'),
+    path('actorname', views.actor_name, name='actor_name')
 ]
-
-
-
